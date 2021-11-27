@@ -1,0 +1,28 @@
+#+TITLE: README
+
+* What is this?
+
+It's a simple utility to convert SVG images to PNG via [[https://xmlgraphics.apache.org/batik/][Apache Batik]].
+
+* How is this used?  
+
+This is currently used for custom drawing via [[https://github.com/archimatetool/archi-scripting-plugin][jArchi]] scripts ([[https://github.com/yveszoundi/archi-humaneimage][Humane Image scripts]]). For general purposes, it's probably better to integrate Apache Batik [[https://mvnrepository.com/search?q=xmlgraphics+batik][directly]] in your projects.
+
+* What are the Requirements?
+
+- A Java development kit installed ([[https://docs.oracle.com/en/java/javase/15/install/overview-jdk-installation.html][JDK 7+]])
+- [[https://maven.apache.org/][Apache Maven]] for the build
+
+* How to build it?
+
+It is built using standard Apache Maven commands at the root of the project.
+
+#+begin_src shell
+mvn package
+#+end_src
+
+A fat jar will be created at =target/svgtopng-lib.jar=, relative to the project root folder.
+
+
+
+
