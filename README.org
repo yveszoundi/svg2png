@@ -21,7 +21,7 @@ It is built using standard Apache Maven commands at the root of the project.
 mvn package
 #+end_src
 
-A fat jar will be created at =target/svgtopng-lib.jar=, relative to the project root folder.
+A fat jar will be created at =target/svgtopng.lib.jar=, relative to the project root folder.
 
 
 
