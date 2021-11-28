@@ -73,11 +73,9 @@ public class SvgToPng {
 	}
 
 	public String toPngBase64FromString(String svg, String backgroundColor) throws Exception {
-		try (ByteArrayOutputStream bos = new ByteArrayOutputStream()) {
-			toPngFromReader(new StringReader(svg), bos, backgroundColor);
+        byte[] imageBytes = toPngBytesFromString(svg, backgroundColor);
 
-			return Base64.encodeBase64String(bos.toByteArray());
-		}
+        return Base64.encodeBase64String(imageBytes);
 	}
 
 	public byte[] toPngBytesFromString(String svg, String backgroundColor) throws Exception {
